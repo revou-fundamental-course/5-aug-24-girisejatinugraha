@@ -4,49 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Kalkulator | By Giri Sejati Nugraha</title>
+    <!-- Menambahkan ikon favicon untuk tab browser -->
     <link rel="icon" href="image/icon.ico" type="image/x-icon">
+    <!-- Menghubungkan file CSS untuk styling -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Container utama untuk membungkus konten halaman -->
     <div class="container">
 
+        <!-- Bagian kiri yang berisi form input untuk menghitung BMI -->
         <article class="left-article">
             <h2>Kalkulator BMI</h2>
             <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
             
+            <!-- Form untuk input data BMI -->
             <form id="bmiForm">
+                <!-- Input untuk jenis kelamin -->
                 <div class="form-group">
                     <label>Jenis Kelamin</label>
                     <div class="form-inline">
+                        <!-- Opsi jenis kelamin Pria -->
                         <label>
                             <input type="radio" name="gender" value="Pria" checked> Pria
                         </label>
+                        <!-- Opsi jenis kelamin Wanita -->
                         <label>
                             <input type="radio" name="gender" value="Wanita"> Wanita
                         </label>
                     </div>
                 </div>
+                <!-- Input untuk berat badan dalam kilogram -->
                 <div class="form-group">
                     <label for="weight">Berat Badan (kg)</label>
                     <img src="image/pensil.jpeg" alt="icon-pencil" class="icon-pencil">
                     <input type="number" id="weight" name="weight" placeholder="0">
                 </div>
+                <!-- Input untuk usia dalam tahun -->
                 <div class="form-group">
                     <label for="age">Usia (tahun)</label>
                     <img src="image/pensil.jpeg" alt="icon-pencil" class="icon-pencil">
                     <input type="number" id="age" name="age" placeholder="0">
                 </div>
+                <!-- Input untuk tinggi badan dalam sentimeter -->
                 <div class="form-group">
                     <label for="height">Tinggi Badan (cm)</label>
                     <img src="image/pensil.jpeg" alt="icon-pencil" class="icon-pencil">
                     <input type="number" id="height" name="height" placeholder="0">
                 </div>
+                <!-- Tombol untuk menghitung BMI dan reset form -->
                 <div class="buttons">
                     <button type="submit">Hitung BMI</button>
                     <button type="reset">Reset</button>
                 </div>
             </form>
             
+            <!-- Bagian yang menampilkan keunggulan fitur dari kalkulator BMI -->
             <article class="features">
                 <h2>Keunggulan fitur</h2>
                 <ol>
@@ -59,8 +72,10 @@
             </article>
         </article>
 
+        <!-- Bagian kanan yang menampilkan hasil perhitungan BMI -->
         <article class="right-article">
             <h2>Hasil</h2>
+            <!-- Kotak hasil perhitungan BMI -->
             <div id="bmiResult" class="result-box">
                 <h3>Hasil Hitung BMI</h3>
                 <p class="bmi-value">--</p>
@@ -68,32 +83,38 @@
                 <button id="downloadResult" style="display:none;">Download Hasil BMI</button>
             </div>
 
+            <!-- Ringkasan BMI akan ditampilkan di sini -->
             <div class="bmi-summary" id="bmiSummary"></div>
 
-                <div class="action-buttons">
-                    <button onclick="window.location.href='#';">Konsultasi Ahli Gizi via Aplikasi</button>
-                    <button onclick="window.location.href='#';">Registrasi Online Ahli Gizi</button>
-                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seorang, Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda,</p>
-                </div>
+            <!-- Tombol aksi untuk konsultasi dan registrasi ahli gizi -->
+            <div class="action-buttons">
+                <button onclick="window.location.href='#';">Konsultasi Ahli Gizi via Aplikasi</button>
+                <button onclick="window.location.href='#';">Registrasi Online Ahli Gizi</button>
+                <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seorang, Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda,</p>
+            </div>
 
-                <article class="result-details">
-                    <h2>Beberapa penyakit yang berasal dari kegemukan</h2>
-                    <ul>
-                        <li>Diabetes</li>
-                        <li>Hipertensi</li>
-                        <li>Sakit Jantung</li>
-                        <li>Osteoartritis</li>
-                    </ul>
-                    <button onclick="window.location.href='#';">Konsultasi Dokter via Aplikasi</button>
-                    <button onclick="window.location.href='#';">Registrasi Online Sekarang</button>
+            <!-- Bagian yang menampilkan informasi tentang penyakit terkait kegemukan -->
+            <article class="result-details">
+                <h2>Beberapa penyakit yang berasal dari kegemukan</h2>
+                <ul>
+                    <li>Diabetes</li>
+                    <li>Hipertensi</li>
+                    <li>Sakit Jantung</li>
+                    <li>Osteoartritis</li>
+                </ul>
+                <button onclick="window.location.href='#';">Konsultasi Dokter via Aplikasi</button>
+                <button onclick="window.location.href='#';">Registrasi Online Sekarang</button>
             </article>
 
+            <!-- Bagian untuk mendownload aplikasi terkait -->
             <div class="download-app">
                 <p>Download Aplikasi</p>
                 <div class="button-container">
+                    <!-- Tombol untuk menuju Google Play Store -->
                     <a href="https://play.google.com/store/apps" target="_blank">
                         <img src="image/Google-Play.png" alt="Google Play">
                     </a>
+                    <!-- Tombol untuk menuju Apple App Store -->
                     <a href="https://apps.apple.com" target="_blank">
                         <img src="image/App-Store.png" alt="App Store">
                     </a>
@@ -102,6 +123,7 @@
         </article>
     </div>
 
+    <!-- Menghubungkan file JavaScript untuk interaktivitas -->
     <script src="scripts/script.js"></script>
 </body>
 </html>

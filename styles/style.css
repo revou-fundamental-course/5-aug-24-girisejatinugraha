@@ -1,9 +1,11 @@
+/* Mengatur margin, padding, dan box-sizing untuk semua elemen */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Mengatur gaya dasar untuk body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -11,6 +13,7 @@ body {
     line-height: 1.6;
 }
 
+/* Mengatur container utama yang berfungsi sebagai pembungkus utama */
 .container {
     display: flex;
     justify-content: space-between;
@@ -18,11 +21,13 @@ body {
     max-width: 1000px;
 }
 
+/* Mengatur gaya untuk kedua artikel (kiri dan kanan) */
 .left-article, .right-article {
     padding: 20px;
     width: 48%;
 }
 
+/* Gaya untuk judul artikel di kedua artikel */
 .left-article h2,
 .right-article h2 {
     margin-bottom: 15px;
@@ -30,6 +35,7 @@ body {
     color: #666;
 }
 
+/* Gaya untuk paragraf di kedua artikel */
 .left-article p,
 .right-article p {
     margin-bottom: 15px;
@@ -38,6 +44,7 @@ body {
     text-align: justify;
 }
 
+/* Gaya untuk judul fitur */
 .features h2 {
     margin-top: 15px;
     margin-bottom: 10px;
@@ -45,6 +52,7 @@ body {
     color: #666;
 }
 
+/* Gaya untuk daftar fitur dengan penomoran */
 .features ol {
     list-style-type: decimal;
     margin-left: 15px;
@@ -52,16 +60,19 @@ body {
     color: #666;
 }
 
-.features ul ol{
+/* Gaya untuk daftar fitur dengan bullet */
+.features ul ol {
     list-style-type: disc;
     margin-left: 20px;
 }
 
-.features p{
+/* Gaya untuk paragraf dalam fitur */
+.features p {
     font-size: 0.8em;
     margin-top: 25px;
 }
 
+/* Gaya untuk form, termasuk margin, padding, dan border-radius */
 form {
     margin-top: 15px;
     background-color: #f5f5f5;
@@ -70,11 +81,13 @@ form {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Gaya untuk setiap grup form */
 .form-group {
     margin-bottom: 15px;
     position: relative;
 }
 
+/* Gaya untuk label dalam form */
 .form-group label {
     display: block;
     margin-bottom: 5px;
@@ -83,6 +96,7 @@ form {
     color: #333;
 }
 
+/* Gaya untuk input tipe number */
 .form-group input[type="number"] {
     width: 100%;
     padding: 10px 10px 10px 40px; 
@@ -93,10 +107,12 @@ form {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
 }
 
+/* Gaya untuk placeholder pada input tipe number */
 .form-group input[type="number"]::placeholder {
     color: #ccc;
 }
 
+/* Gaya untuk ikon pensil di dalam input */
 .form-group .icon-pencil {
     position: absolute;
     top: 35px;
@@ -108,12 +124,14 @@ form {
     pointer-events: none;
 }
 
+/* Gaya untuk radio button dalam form inline */
 .form-inline {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
+/* Gaya untuk radio button */
 .form-inline input[type="radio"] {
     margin-right: 5px;
     appearance: none;
@@ -125,6 +143,7 @@ form {
     cursor: pointer;
 }
 
+/* Gaya untuk radio button yang dipilih */
 .form-inline input[type="radio"]:checked::before {
     content: "";
     width: 15px;
@@ -135,12 +154,14 @@ form {
     cursor: pointer;
 }
 
+/* Gaya untuk tombol submit dan reset dalam form */
 .buttons {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
 }
 
+/* Gaya untuk tombol submit dan reset */
 .buttons button {
     background-color: #17a2b8;
     color: #fff;
@@ -151,14 +172,17 @@ form {
     font-size: 0.7em;
 }
 
+/* Gaya untuk tombol reset */
 .buttons button[type="reset"] {
     background-color: #666;
 }
 
+/* Hover effect untuk tombol */
 .buttons button:hover {
     opacity: 0.9;
 }
 
+/* Gaya untuk kotak hasil BMI */
 .result-box {
     text-align: center; 
     padding: 20px; 
@@ -172,12 +196,14 @@ form {
     min-height: 200px;
 }
 
+/* Gaya untuk judul dalam kotak hasil */
 .result-box h3 {
     font-size: 0.8em;
     color: #666;
     margin-bottom: 10px;
 }
 
+/* Gaya untuk nilai BMI yang ditampilkan */
 .bmi-value {
     font-size: 1.5em;
     color: #007bff; 
@@ -186,12 +212,14 @@ form {
     text-align: center;
 }
 
+/* Gaya untuk kategori BMI yang ditampilkan */
 .bmi-category {
     font-size: 1.2em; 
     color: #333; 
     text-align: center;
 }
 
+/* Gaya untuk tombol download hasil BMI */
 #downloadResult {
     padding: 10px 20px;
     background-color: #17a2b8;
@@ -203,10 +231,12 @@ form {
     font-size: 0.8em;
 }
 
+/* Hover effect untuk tombol download hasil */
 #downloadResult:hover {
     opacity: 0.9;
 }
 
+/* Gaya untuk detail hasil BMI */
 .result-details {
     max-width: 500px; 
     margin: 0 auto; 
@@ -217,6 +247,7 @@ form {
     text-align: center; 
 }
 
+/* Gaya untuk judul dalam detail hasil */
 .result-details h2 {
     font-size: 15px; 
     margin-bottom: 15px; 
@@ -224,17 +255,20 @@ form {
     color: #666;
 }
 
+/* Gaya untuk daftar penyakit dalam detail hasil */
 .result-details ul {
     list-style-type: none; 
     padding: 0;
 }
 
+/* Gaya untuk item dalam daftar penyakit */
 .result-details ul li {
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
 }
 
+/* Gaya untuk tombol dalam detail hasil */
 .result-details button {
     background-color: #17a2b8;
     color: #fff;
@@ -246,15 +280,18 @@ form {
     margin-top: 10px;
 }
 
+/* Hover effect untuk tombol dalam detail hasil */
 .result-details button:hover {
     opacity: 0.9;
 }
 
+/* Gaya untuk tombol aksi lainnya */
 .action-buttons {
     margin-top: 15px;
     justify-content: space-between;
 }
 
+/* Gaya untuk tombol aksi lainnya */
 .action-buttons button {
     background-color: #17a2b8;
     color: #fff;
@@ -265,15 +302,18 @@ form {
     font-size: 0.8em;
 }
 
+/* Hover effect untuk tombol aksi lainnya */
 .action-buttons button:hover {
     opacity: 0.9;
 }
 
+/* Gaya untuk paragraf dalam aksi lainnya */
 .action-buttons p {
     font-size: 0.8em;
     margin-top: 15px;
 }
 
+/* Gaya untuk bagian download aplikasi */
 .download-app {
     text-align: center;
     padding: 20px;
@@ -281,6 +321,7 @@ form {
     margin: 20px auto;
 }
 
+/* Gaya untuk paragraf dalam bagian download aplikasi */
 .download-app p {
     font-size: 1em;
     margin-bottom: 15px;
@@ -288,11 +329,13 @@ form {
     text-align: center;
 }
 
+/* Gaya untuk container tombol download aplikasi */
 .download-app .button-container {
     display: inline-flex;
     justify-content: center;
 }
 
+/* Gaya untuk gambar dalam tombol download aplikasi */
 .download-app .button-container a img {
     width: 130px;
     height: 50px; 
@@ -300,155 +343,192 @@ form {
     object-fit: cover; 
 }
 
+/* Hover effect untuk tombol download aplikasi */
 .download-app .button-container a:hover {
     opacity: 0.9;
 }
 
+/* Media queries untuk perangkat dengan lebar max 768px */
 @media (max-width: 768px) {
+    /* Mengubah layout container menjadi kolom */
     .container {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Mengatur ulang padding dan lebar artikel */
     .left-article, .right-article {
         width: 100%;
         padding: 10px;
     }
 
+    /* Mengurangi ukuran font untuk daftar fitur */
     .features ol, .features ul {
         font-size: 0.7em;
     }
 
+    /* Mengurangi ukuran font untuk label form */
     .form-group label {
         font-size: 0.7em;
     }
 
+    /* Mengatur ulang posisi ikon pensil dalam input */
     .form-group .icon-pencil {
         top: 30px; 
     }
 
+    /* Mengatur padding input untuk layar kecil */
     .form-group input[type="number"] {
         padding: 5px 10px 10px 40px; 
     }
 
+    /* Mengurangi ukuran font tombol */
     .buttons button {
         font-size: 0.6em;
         padding: 8px 16px;
     }
 
+    /* Mengurangi ukuran font untuk hasil BMI */
     .result-box h3 {
         font-size: 0.7em;
     }
 
+    /* Mengurangi ukuran font untuk nilai BMI */
     .bmi-value {
         font-size: 1.2em;
     }
 
+    /* Mengurangi ukuran font untuk kategori BMI */
     .bmi-category {
         font-size: 1em;
     }
 
+    /* Mengurangi ukuran font untuk tombol download hasil */
     #downloadResult {
         font-size: 0.7em;
         padding: 8px 16px;
     }
 
+    /* Mengurangi ukuran font untuk judul detail hasil */
     .result-details h2 {
         font-size: 14px;
     }
 
+    /* Mengurangi ukuran font untuk daftar penyakit dalam detail hasil */
     .result-details ul li {
         font-size: 12px;
     }
 
+    /* Mengatur ulang layout tombol aksi */
     .action-buttons {
         gap: 15px; 
     }
 
+    /* Mengurangi ukuran font dan padding tombol aksi */
     .action-buttons button {
         padding: 10px 20px; 
         font-size: 0.7em; 
         margin-bottom: 12px; 
     }
 
+    /* Mengurangi ukuran font untuk paragraf dalam aksi lainnya */
     .download-app p {
         font-size: 0.9em;
     }
 
+    /* Mengatur ulang ukuran gambar tombol download aplikasi */
     .download-app .button-container a img {
         width: 90px;
     }
 }
 
+/* Media queries untuk perangkat dengan lebar max 480px */
 @media (max-width: 480px) {
+    /* Mengatur ulang margin container */
     .container {
         margin: 10px;
     }
 
+    /* Mengatur ulang padding artikel */
     .left-article, .right-article {
         padding: 5px;
     }
 
+    /* Mengurangi ukuran font untuk daftar fitur */
     .features ol, .features ul {
         font-size: 0.6em;
     }
 
+    /* Mengurangi ukuran font untuk label form */
     .form-group label {
         font-size: 0.6em;
     }
 
+    /* Mengatur ulang posisi ikon pensil dalam input */
     .form-group .icon-pencil {
         top: 25px; 
     }
 
+    /* Mengatur padding input untuk layar sangat kecil */
     .form-group input[type="number"] {
         padding: 5px 10px 10px 40px; 
     }
 
+    /* Mengurangi ukuran font tombol */
     .buttons button {
         font-size: 0.5em;
         padding: 6px 12px;
     }
 
+    /* Mengurangi ukuran font untuk hasil BMI */
     .result-box h3 {
         font-size: 0.6em;
     }
 
+    /* Mengurangi ukuran font untuk nilai BMI */
     .bmi-value {
         font-size: 1em;
     }
 
+    /* Mengurangi ukuran font untuk kategori BMI */
     .bmi-category {
         font-size: 0.9em;
     }
 
+    /* Mengurangi ukuran font untuk tombol download hasil */
     #downloadResult {
         font-size: 0.6em;
         padding: 6px 12px;
     }
 
+    /* Mengurangi ukuran font untuk judul detail hasil */
     .result-details h2 {
         font-size: 12px;
     }
 
+    /* Mengurangi ukuran font untuk daftar penyakit dalam detail hasil */
     .result-details ul li {
         font-size: 10px;
     }
 
+    /* Mengatur ulang layout tombol aksi */
     .action-buttons {
         gap: 15px; 
     }
 
+    /* Mengurangi ukuran font dan padding tombol aksi */
     .action-buttons button {
         padding: 10px 20px; 
         font-size: 0.7em; 
         margin-bottom: 12px; 
     }
 
+    /* Mengurangi ukuran font untuk paragraf dalam aksi lainnya */
     .download-app p {
         font-size: 0.9em;
     }
 
+    /* Mengatur ulang ukuran gambar tombol download aplikasi */
     .download-app .button-container a img {
         width: 90px;
     }
